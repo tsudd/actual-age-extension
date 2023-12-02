@@ -1,5 +1,5 @@
 {
-  "name": "actual-age-extension",
+  "name": "actual-age-extension-for-firefox",
   "version": "1.0.1",
   "description": "Extension for displaying your actual age (float number)",
   "license": "MIT",
@@ -9,25 +9,25 @@
     "build": "webpack --mode=production --config config/webpack.config.js"
   },
   "devDependencies": {
-    "copy-webpack-plugin": "^6.4.1",
-    "eslint": "^7.32.0",
-    "eslint-config-google": "^0.14.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "file-loader": "^6.2.0",
-    "prettier": "^2.3.2",
-    "size-plugin": "^2.0.2",
-    "webpack": "^4.46.0",
-    "webpack-cli": "^3.3.12",
-    "webpack-merge": "^5.7.3"
+    "copy-webpack-plugin": "11.0.0",
+    "eslint": "8.55.0",
+    "eslint-config-google": "0.14.0",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "file-loader": "6.2.0",
+    "prettier": "3.1.0",
+    "size-plugin": "^1.2.0",
+    "webpack": "5.89.0",
+    "webpack-cli": "5.1.4",
+    "webpack-merge": "5.10.0"
   },
   "dependencies": {
-    "a-simple-switch": "^0.6.0",
-    "bootstrap": "^5.0.1",
-    "css-loader": "^5.2.4",
-    "moment": "^2.29.1",
-    "node-sass": "^6.0.1",
-    "sass-loader": "^10",
-    "style-loader": "^2.0.0"
+    "a-simple-switch": "0.8.1",
+    "bootstrap": "5.3.2",
+    "css-loader": "6.8.1",
+    "moment": "2.29.4",
+    "node-sass": "9.0.0",
+    "sass-loader": "13",
+    "style-loader": "3.3.3"
   }
 }
