@@ -26,12 +26,17 @@ body {
   background: #22272e;
 }
 
-input[type="date"]::-webkit-inner-spin-button,
 input[type="date"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
+  background: transparent;
+  position: absolute;
+  width: auto;
+  right: 0;
+  left: 0;
+  top: 0;
+  bottom: 0;
 }
 
-input[type="time"]::-webkit-inner-spin-button,
 input[type="time"]::-webkit-calendar-picker-indicator {
   cursor: pointer;
 }

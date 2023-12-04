@@ -2,7 +2,7 @@ import { storage } from "../../common";
 
 export const updateThemePostMessage = () => {
   storage.get("theme", (theme) => {
-    chrome.runtime.sendMessage(
+    browser.runtime.sendMessage(
       {
         type: "UPDATE_THEME",
         payload: {

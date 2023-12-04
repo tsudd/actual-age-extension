@@ -1,16 +1,16 @@
-'use strict';
+"use strict";
 
-const SizePlugin = require('size-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
+const SizePlugin = require("size-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
-const PATHS = require('./paths');
+const PATHS = require("./paths");
 
 const common = {
   output: {
     path: PATHS.build,
-    filename: '[name].js',
+    filename: "[name].js",
   },
-  devtool: 'source-map',
+  devtool: "source-map",
   stats: {
     all: false,
     errors: true,
@@ -20,27 +20,20 @@ const common = {
     rules: [
       {
         test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-        ],
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.css$/i,
-        use: [
-          'style-loader',
-          'css-loader',
-        ],
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpe?g|gif)$/i,
         use: [
           {
-            loader: 'file-loader',
+            loader: "file-loader",
             options: {
-              outputPath: 'images',
-              name: '[name].[ext]',
+              outputPath: "images",
+              name: "[name].[ext]",
             },
           },
         ],
@@ -54,10 +47,10 @@ const common = {
     new CopyWebpackPlugin({
       patterns: [
         {
-          from: '**/*',
-          context: 'public',
+          from: "**/*",
+          context: "public",
         },
-      ]
+      ],
     }),
   ],
 };

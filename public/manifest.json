@@ -3,17 +3,15 @@
   "name": "Actual Age Tab for Firefox",
   "version": "1.0.0",
   "description": "Extension for displaying your actual age (float number)",
+  "homepage_url": "https://github.com/tsudd/actual-age-extension",
   "icons": {
     "16": "icons/icon_128.png",
     "32": "icons/icon_128.png",
     "48": "icons/icon_128.png",
     "128": "icons/icon_128.png"
   },
-  "background": {
-    "scripts": ["background.js"],
-    "persistent": false
-  },
   "browser_action": {
+    "default_icon": "icons/icon_128.png",
     "default_title": "Actual Age-extension",
     "default_popup": "popup.html"
   },
@@ -23,7 +21,7 @@
   "permissions": ["storage"],
   "browser_specific_settings": {
     "gecko": {
-      "id": "actual-age-tab-for-firefox@mozilla.org",
+      "id": "{c6a697df-9132-4d9c-95df-fa684b246a72}",
       "strict_min_version": "42.0"
     }
   }

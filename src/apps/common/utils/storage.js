@@ -1,11 +1,11 @@
 export const storage = {
-  get: (name, cb) => {
-    chrome.storage.sync.get([name], (result) => {
-      cb(result[name]);
-    });
+  get: async (name, cb) => {
+    const result = await browser.storage.sync.get(name);
+    console.log(result);
+    cb(result[name]);
   },
-  set: (name, value, cb) => {
-    chrome.storage.sync.set(
+  set: async (name, value, cb) => {
+    await browser.storage.sync.set(
       {
         [name]: value,
       },

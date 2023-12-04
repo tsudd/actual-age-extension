@@ -86,7 +86,7 @@ export const setupTab = () => {
     }, config.POLLING_TIMEOUT);
   };
 
-  chrome.runtime.onMessage.addListener(({ type, payload }) => {
+  browser.runtime.onMessage.addListener(({ type, payload }) => {
     switch (type) {
       case "UPDATE_BIRTHDAY": {
         setup(payload.birthday);

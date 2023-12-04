@@ -1,4 +1,5 @@
 import * as SimpleSwitch from "a-simple-switch";
+import { Datepicker } from "vanillajs-datepicker";
 
 import { config } from "./config";
 import moment from "moment";
@@ -14,14 +15,14 @@ import "../common/styles";
 export const setupPopup = () => {
   const updateBirthdayPostMessage = () => {
     storage.get("birthday", (birthday) => {
-      chrome.runtime.sendMessage(
+      browser.runtime.sendMessage(
         {
           type: "UPDATE_BIRTHDAY",
           payload: {
             birthday,
           },
         },
-        () => {}
+        () => {},
       );
     });
   };
@@ -35,7 +36,7 @@ export const setupPopup = () => {
         storage.set(
           "birthday",
           date + " " + birthdayTime,
-          updateBirthdayPostMessage
+          updateBirthdayPostMessage,
         );
     });
   };
@@ -49,7 +50,7 @@ export const setupPopup = () => {
         storage.set(
           "birthday",
           birthdayDate + " " + time,
-          updateBirthdayPostMessage
+          updateBirthdayPostMessage,
         );
     });
   };
@@ -57,6 +58,9 @@ export const setupPopup = () => {
   const setupActualAge = (initialValue) => {
     const birthdayDate = document.getElementById("date");
     const birthdayTime = document.getElementById("time");
+    const birthdayPicker = new Datepicker(birthdayDate, {
+
+    });
 
     if (initialValue) {
       if (moment(initialValue).format("YYYY-MM-DD") !== config.INVALID_DATE)
@@ -75,8 +79,8 @@ export const setupPopup = () => {
     });
   };
 
-  const restoreActualAge = () => {
-    storage.get("birthday", setupActualAge);
+  const restoreActualAge = async () => {
+    await storage.get("birthday", setupActualAge);
 
     SimpleSwitch.init();
 
