@@ -1,5 +1,4 @@
 import * as SimpleSwitch from "a-simple-switch";
-import { Datepicker } from "vanillajs-datepicker";
 
 import { config } from "./config";
 import moment from "moment";
@@ -58,9 +57,6 @@ export const setupPopup = () => {
   const setupActualAge = (initialValue) => {
     const birthdayDate = document.getElementById("date");
     const birthdayTime = document.getElementById("time");
-    const birthdayPicker = new Datepicker(birthdayDate, {
-
-    });
 
     if (initialValue) {
       if (moment(initialValue).format("YYYY-MM-DD") !== config.INVALID_DATE)
@@ -88,7 +84,7 @@ export const setupPopup = () => {
     const light = document.getElementById("light");
     const switcher = document.getElementById("theme-switch");
     const shadowSwitcher = document.getElementsByClassName(
-      "_simple-switch-track"
+      "_simple-switch-track",
     )[0];
 
     let currentTheme = "light";
