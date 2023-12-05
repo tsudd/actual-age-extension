@@ -5,13 +5,13 @@ Inspired by [4llower](https://github.com/4llower/actual-age-extension).
 
 ## Popup appearance
 
-_You can select your Birth date & time. Finite number will be reckoned from date what you chosen_
+_You can select your Birth date & time. Finite number will be reckoned from the date you've chosen_
 
 <img src="docs/images/popup.png" width="500">
 
 ## New tab new appearance
 
-_Core component which display your actual age_
+_Core component which displays your actual age_
 
 <img src="docs/images/tab.png" width="500">
 

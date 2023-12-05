@@ -3,7 +3,7 @@
   "name": "Actual Age Tab for Firefox",
   "version": "1.0.0",
   "description": "Extension for displaying your actual age (float number)",
-  "homepage_url": "https://github.com/tsudd/actual-age-extension",
+  "homepage_url": "https://github.com/tsudd/actual-age-extension-for-firefox",
   "icons": {
     "16": "icons/icon_16.png",
     "32": "icons/icon_32.png",
