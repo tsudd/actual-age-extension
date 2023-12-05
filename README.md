@@ -1,6 +1,7 @@
-# <img src="docs/images/icon.png" width="45" align="left"> Actual Age Chrome Extension
+# <img src="docs/images/icon.png" width="45" align="left"> Actual Age Firefox Extension
 
-Chrome extension for displaying your actual age (floating number)
+Firefox extension for displaying your actual age (floating number).
+Inspired by [4llower](https://github.com/4llower/actual-age-extension).
 
 ## Popup appearance
 
@@ -21,6 +22,6 @@ _Core component which display your actual age_
 <a></a>
 <img src="docs/images/dark-tab.png" width="500">
 
-## Install
+## Original extension for Chrome
 
 [**Chrome** extension](https://chrome.google.com/webstore/detail/actual-age-tab/ocapfmbpidoohpnacpcokoiahaofljia)
