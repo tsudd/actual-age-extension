@@ -22,6 +22,10 @@ _Core component which displays your actual age_
 <a></a>
 <img src="docs/images/dark-tab.png" width="500">
 
+## Add-on is published for Firefox
+
+Add it right from the [gallery](https://addons.mozilla.org/en-US/firefox/addon/actual-age-tab-for-firefox/).
+
 ## Original extension for Chrome
 
 [**Chrome** extension](https://chrome.google.com/webstore/detail/actual-age-tab/ocapfmbpidoohpnacpcokoiahaofljia)
